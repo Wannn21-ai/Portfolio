@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- ===================== SEO META ===================== -->
+  <title>Ridwan Maulana Kholiq — Electronics & IoT Engineer</title>
+  <meta name="description" content="Mahasiswa D3 Teknik Elektronika di Politeknik PGRI Banten. Fokus di bidang IoT, Embedded System, dan Energy Monitoring berbasis ESP32 dan Firebase.">
+  <meta name="keywords" content="IoT Engineer, Embedded System, ESP32, Arduino, Firebase, Electronics, Energy Monitoring, Portfolio">
+  <meta name="author" content="Ridwan Maulana Kholiq">
+  <meta name="robots" content="index, follow">
+
+  <!-- ===================== OPEN GRAPH (Social Sharing) ===================== -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Ridwan Maulana Kholiq — Electronics & IoT Engineer">
+  <meta property="og:description" content="Mahasiswa D3 Teknik Elektronika. Fokus IoT, Embedded System & Energy Monitoring. From lathe to logic, from frais to Firebase.">
+  <meta property="og:image" content="https://placehold.co/1200x630/080c10/00d4ff?text=RMK+Portfolio">
+  <!-- Ganti og:image dengan URL gambar preview portfolio kamu (1200x630px) -->
+  <meta property="og:url" content="https://your-domain.com">
+  <!-- Ganti og:url dengan URL domain kamu di Netlify -->
+  <meta property="og:locale" content="id_ID">
+
+  <!-- ===================== TWITTER CARD ===================== -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Ridwan Maulana Kholiq — Electronics & IoT Engineer">
+  <meta name="twitter:description" content="IoT · Embedded System · Energy Monitoring">
+  <meta name="twitter:image" content="https://placehold.co/1200x630/080c10/00d4ff?text=RMK+Portfolio">
+
+  <!-- ===================== FAVICON ===================== -->
+  <!-- Taruh file favicon.ico, favicon-32x32.png, favicon-16x16.png di folder yang sama -->
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+
+  <!-- ===================== FONTS ===================== -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;700&family=Syne:wght@400;600;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="dark-mode">
+
+  <!-- ===================== NAV ===================== -->
+  <nav id="navbar">
+    <div class="nav-logo">RMK<span>.</span></div>
+
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#about" class="nav-link">about</a></li>
+      <li><a href="#skills" class="nav-link">skills</a></li>
+      <li><a href="#projects" class="nav-link">projects</a></li>
+      <li><a href="#education" class="nav-link">education</a></li>
+      <li><a href="#certificates" class="nav-link">certificates</a></li>
+      <li><a href="#contact" class="nav-link">contact</a></li>
+    </ul>
+
+    <div class="nav-actions">
+      <!-- Dark/Light Mode Toggle -->
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark/light mode">
+        <span class="theme-icon theme-icon-dark">🌙</span>
+        <span class="theme-icon theme-icon-light">☀️</span>
+      </button>
+
+      <!-- Hamburger Menu (Mobile) -->
+      <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu Overlay -->
+  <div class="mobile-overlay" id="mobileOverlay"></div>
+
+  <!-- ===================== HERO ===================== -->
+  <div class="hero">
+    <div class="hero-glow"></div>
+    <div class="hero-glow2"></div>
+
+    <div class="hero-tag">ELECTRONICS & IOT ENGINEER</div>
+
+    <!-- Profile Photo -->
+    <div class="hero-profile">
+      <!-- TEMPLATE FOTO PROFIL:
+           Ganti src dengan path foto kamu, contoh: src="assets/foto-profil.jpg"
+           Disarankan ukuran 400x400px, format JPG/WebP -->
+      <img
+        src="assets/img/foto.jpeg"
+        alt="Ridwan Maulana Kholiq"
+        class="profile-photo"
+        width="120"
+        height="120"
+      >
+      <div class="profile-status">
+        <span class="status-dot"></span>
+        <span>Available for work</span>
+      </div>
+    </div>
+
+    <h1 class="hero-name">Ridwan<br>Maulana Kholiq</h1>
+    <div class="hero-title">// IoT · Embedded System · Energy Monitoring<span class="cursor"></span></div>
+
+    <p class="hero-bio">
+      Mahasiswa <span class="highlight">D3 Teknik Elektronika</span> di Politeknik PGRI Banten. Dari bubut pindah ke bug. Dari frais pindah ke Firebase.<br><br>
+      Fokus di bidang <span class="highlight">IoT</span>, embedded system, dan monitoring energi listrik berbasis web — dengan background unik dari SMK Teknik Pemesinan.
+    </p>
+
+    <div class="hero-cta">
+      <a href="#projects" class="btn btn-primary">▸ Lihat Proyek</a>
+      <a href="#contact" class="btn btn-outline">Hubungi Saya</a>
+      <!-- TEMPLATE CV/RESUME:
+           Ganti href dengan path file CV kamu, contoh: href="assets/cv-ridwan.pdf"
+           Lalu hapus style="display:none" di bawah ini -->
+      <a href="assets/file/cv-ridwan-maulana-kholiq.pdf"
+         download="CV-Ridwan-Maulana-Kholiq.pdf"
+         class="btn btn-cv"
+         
+         aria-label="Download CV Ridwan Maulana Kholiq">
+        ↓ Download CV
+      </a>
+    </div>
+
+    <div class="hero-stats">
+      <div class="stat-item">
+        <span class="stat-num">3</span>
+        <span class="stat-label">PROJECTS</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-num">6</span>
+        <span class="stat-label">SEMESTER</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-num">15+</span>
+        <span class="stat-label">TOOLS & TECH</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===================== ABOUT ===================== -->
+  <section id="about">
+    <div class="section-header">
+      <span class="section-num">01</span>
+      <h2 class="section-title">About Me</h2>
+      <div class="section-line"></div>
+    </div>
+
+    <div class="about-grid">
+      <div class="about-text">
+        <p>Halo! Saya <span class="hl">Ridwan Maulana Kholiq</span>, mahasiswa D3 Teknik Elektronika semester 6 di <span class="hl">Politeknik PGRI Banten</span>.</p>
+        <p>Perjalanan saya cukup unik — berawal dari dunia <span class="hl">teknik pemesinan</span> (bubut, CNC, frais), lalu nyemplung ke dunia elektronika dan pemrograman. Background ini memberikan saya perspektif engineering yang kuat dari sisi hardware maupun software.</p>
+        <p>Saat ini saya fokus mengembangkan keahlian di bidang <span class="hl">IoT</span>, embedded system berbasis ESP32, dan sistem monitoring energi listrik real-time berbasis web. Saya percaya teknologi harus bisa diakses dan bermanfaat secara nyata.</p>
+      </div>
+
+      <div class="terminal-card">
+        <div class="terminal-bar">
+          <div class="dot dot-red"></div>
+          <div class="dot dot-yellow"></div>
+          <div class="dot dot-green"></div>
+          <span class="terminal-filename">ridwan.json</span>
+        </div>
+        <div class="terminal-body">
+          <span class="t-bracket">{</span><br>
+          &nbsp;<span class="t-key">"name"</span><span class="t-bracket">: </span><span class="t-str">"Ridwan Maulana Kholiq"</span>,<br>
+          &nbsp;<span class="t-key">"status"</span><span class="t-bracket">: </span><span class="t-str">"Mahasiswa D3 Sem.6"</span>,<br>
+          &nbsp;<span class="t-key">"campus"</span><span class="t-bracket">: </span><span class="t-str">"Politeknik PGRI Banten"</span>,<br>
+          &nbsp;<span class="t-key">"focus"</span><span class="t-bracket">: [</span><br>
+          &nbsp;&nbsp;<span class="t-str">"IoT"</span>,<br>
+          &nbsp;&nbsp;<span class="t-str">"Embedded System"</span>,<br>
+          &nbsp;&nbsp;<span class="t-str">"Energy Monitoring"</span><br>
+          &nbsp;<span class="t-bracket">]</span>,<br>
+          &nbsp;<span class="t-key">"available"</span><span class="t-bracket">: </span><span class="t-num">true</span>,<br>
+          &nbsp;<span class="t-key">"background"</span><span class="t-bracket">: </span><span class="t-str">"SMK Pemesinan → D3 Elektronika"</span>,<br>
+          &nbsp;<span class="t-key">"fun_fact"</span><span class="t-bracket">: </span><span class="t-str">"From lathe to logic, from frais to Firebase"</span><br>
+          <span class="t-bracket">}</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== SKILLS ===================== -->
+  <section id="skills">
+    <div class="section-header">
+      <span class="section-num">02</span>
+      <h2 class="section-title">Skills & Tools</h2>
+      <div class="section-line"></div>
+    </div>
+
+    <div class="skills-grid">
+      <div class="skill-card">
+        <div class="skill-card-title">⚡ Embedded & IoT</div>
+        <div>
+          <span class="skill-tag">ESP32</span>
+          <span class="skill-tag">ESP8266</span>
+          <span class="skill-tag">Arduino IDE</span>
+          <span class="skill-tag">Raspberry Pi</span>
+          <span class="skill-tag">PZEM-004T</span>
+          <span class="skill-tag">Sensor Integration</span>
+          <span class="skill-tag">OLED Display</span>
+          <span class="skill-tag">Relay & Automation</span>
+          <span class="skill-tag">Serial Communication</span>
+          <span class="skill-tag">IoT Monitoring</span>
+        </div>
+      </div>
+
+      <div class="skill-card">
+        <div class="skill-card-title">⌨ Programming</div>
+        <div>
+          <span class="skill-tag">C++ (Arduino)</span>
+          <span class="skill-tag">JavaScript</span>
+          <span class="skill-tag">HTML</span>
+          <span class="skill-tag">CSS</span>
+          <span class="skill-tag">Python</span>
+        </div>
+      </div>
+
+      <div class="skill-card">
+        <div class="skill-card-title">🛠 Tools & Platforms</div>
+        <div>
+          <span class="skill-tag">VS Code</span>
+          <span class="skill-tag">Git & GitHub</span>
+          <span class="skill-tag">Firebase</span>
+          <span class="skill-tag">Netlify</span>
+          <span class="skill-tag">Linux</span>
+          <span class="skill-tag">Windows</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== PROJECTS ===================== -->
+  <section id="projects">
+    <div class="section-header">
+      <span class="section-num">03</span>
+      <h2 class="section-title">Projects</h2>
+      <div class="section-line"></div>
+    </div>
+
+    <div class="projects-grid">
+
+      <!-- Project 1 -->
+      <div class="project-card">
+        <div>
+          <div class="project-num">PROJECT_01 // 2024 · COMPLETED</div>
+          <h3 class="project-name">Automatic Clothesline Prototype</h3>
+          <p class="project-desc">Prototype jemuran otomatis yang mampu mendeteksi kondisi cuaca dan bergerak secara otomatis — tanpa perlu intervensi manual saat hujan turun.</p>
+          <ul class="project-features">
+            <li>Deteksi hujan otomatis</li>
+            <li>Telegram notification</li>
+            <li>Sistem tarik jemuran otomatis</li>
+            <li>Monitoring kondisi cuaca real-time</li>
+            <li>Embedded control system</li>
+          </ul>
+          <div class="project-stack">
+            <span class="stack-tag">Embedded System</span>
+            <span class="stack-tag">ESP32</span>
+            <span class="stack-tag">Raindrop</span>
+            <span class="stack-tag">LDR</span>
+            <span class="stack-tag">Motor Servo</span>
+            <span class="stack-tag">Telegram API</span>
+          </div>
+          <!-- TEMPLATE LINK PROJECT:
+               Hapus style="display:none" jika kamu punya link GitHub/demo.
+               Ganti # dengan URL repo atau demo kamu. -->
+          <div class="project-links" style="display:none">
+            <a href="#" target="_blank" rel="noopener" class="project-link-btn">
+              🐙 GitHub
+            </a>
+            <a href="#" target="_blank" rel="noopener" class="project-link-btn project-link-demo">
+              🔗 Live Demo
+            </a>
+          </div>
+        </div>
+        <span class="project-badge badge-done">DONE</span>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="project-card">
+        <div>
+          <div class="project-num">PROJECT_02 // 2024 · COMPLETED</div>
+          <h3 class="project-name">Smart Donation Box</h3>
+          <p class="project-desc">Sistem kotak amal pintar berbasis ESP32 dengan keamanan berlapis dan monitoring real-time via Telegram — menggabungkan IoT, keamanan fisik, dan automasi dalam satu perangkat.</p>
+          <ul class="project-features">
+            <li>Deteksi uang otomatis (TCS3200)</li>
+            <li>Telegram notification</li>
+            <li>PIN security system & alarm anti maling</li>
+            <li>Maintenance mode</li>
+            <li>LCD monitoring + EEPROM logging</li>
+          </ul>
+          <div class="project-stack">
+            <span class="stack-tag">ESP32</span>
+            <span class="stack-tag">TCS3200</span>
+            <span class="stack-tag">Ultrasonic</span>
+            <span class="stack-tag">LCD I2C</span>
+            <span class="stack-tag">Keypad</span>
+            <span class="stack-tag">Telegram API</span>
+          </div>
+          <!-- TEMPLATE LINK PROJECT -->
+          <div class="project-links" style="display:none">
+            <a href="#" target="_blank" rel="noopener" class="project-link-btn">
+              🐙 GitHub
+            </a>
+            <a href="#" target="_blank" rel="noopener" class="project-link-btn project-link-demo">
+              🔗 Live Demo
+            </a>
+          </div>
+        </div>
+        <span class="project-badge badge-done">DONE</span>
+      </div>
+
+      <!-- Project 3 -->
+      <div class="project-card in-progress">
+        <div>
+          <div class="project-num">PROJECT_03 // 2025 · IN PROGRESS</div>
+          <h3 class="project-name">Smart Energy Monitoring System</h3>
+          <p class="project-desc">Website monitoring listrik berbasis IoT menggunakan ESP32 dan sensor PZEM-004T. Dashboard real-time untuk memantau tegangan, arus, daya, energi, frekuensi, serta estimasi biaya listrik otomatis.</p>
+          <ul class="project-features">
+            <li>Monitoring tegangan, arus, daya, energi & frekuensi</li>
+            <li>Real-time dashboard (Firebase)</li>
+            <li>Estimasi biaya listrik otomatis</li>
+            <li>Riwayat konsumsi energi</li>
+            <li>Web responsive UI</li>
+          </ul>
+          <div class="project-stack">
+            <span class="stack-tag">ESP32</span>
+            <span class="stack-tag">PZEM-004T</span>
+            <span class="stack-tag">OLED Display</span>
+            <span class="stack-tag">Firebase</span>
+            <span class="stack-tag">HTML/CSS/JS</span>
+            <span class="stack-tag">Netlify</span>
+          </div>
+          <!-- TEMPLATE LINK PROJECT -->
+          <div class="project-links">
+            <a href="https://github.com/Wannn21-ai/smart-energy-monitor" target="_blank" rel="noopener" class="project-link-btn">
+              🐙 GitHub
+            </a>
+            <a href="https://smart-energy-monitoring.netlify.app/" target="_blank" rel="noopener" class="project-link-btn project-link-demo">
+              🔗 Live Demo
+            </a>
+          </div>
+        </div>
+        <span class="project-badge badge-wip">WIP</span>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===================== EDUCATION ===================== -->
+  <section id="education">
+    <div class="section-header">
+      <span class="section-num">04</span>
+      <h2 class="section-title">Education</h2>
+      <div class="section-line"></div>
+    </div>
+
+    <div class="edu-grid">
+      <div class="edu-card">
+        <div class="edu-icon">🎓</div>
+        <div>
+          <div class="edu-school">Politeknik PGRI Banten</div>
+          <div class="edu-major">D3 Teknik Elektronika — Semester 6</div>
+          <div class="edu-focus">Fokus: IoT · Embedded System · Energy Monitoring</div>
+        </div>
+      </div>
+
+      <div class="edu-card">
+        <div class="edu-icon">⚙️</div>
+        <div>
+          <div class="edu-school">SMKN 1 Cinangka</div>
+          <div class="edu-major">Teknik Pemesinan</div>
+          <div class="edu-focus">Bubut · CNC · Frais · Dasar Manufaktur & Teknik Produksi</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CERTIFICATES ===================== -->
+  <section id="certificates">
+    <div class="section-header">
+      <span class="section-num">05</span>
+      <h2 class="section-title">Certificates</h2>
+      <div class="section-line"></div>
+    </div>
+
+    <div class="cert-grid">
+
+      <!-- ============================================================
+           TEMPLATE SERTIFIKAT — Duplikat blok ini untuk setiap sertifikat.
+
+           Cara pengisian:
+           - cert-issuer  : nama lembaga/platform (Dicoding, Cisco, dll)
+           - cert-title   : judul sertifikat
+           - cert-date    : bulan & tahun terbit, misal "Jan 2024"
+           - cert-id      : nomor ID sertifikat (opsional, hapus jika tidak ada)
+           - cert-badge   : kategori badge, ganti class badge-tech / badge-iot /
+                            badge-prog / badge-other sesuai kategori
+           - href di <a>  : link verifikasi sertifikat (opsional, hapus jika tidak ada)
+           ============================================================ -->
+
+      <div class="cert-card">
+        <div class="cert-header">
+          <div class="cert-icon">🏅</div>
+          <div class="cert-meta">
+            <div class="cert-issuer">BBPVP SERANG</div>
+            <div class="cert-date">Nov 2025</div>
+          </div>
+          <span class="cert-badge badge-tech">ELEC</span>
+        </div>
+        <div class="cert-title">Pemasangan Instalasi Listrik Bangunan
+Sederhana</div>
+        <div class="cert-id">No: 2602252954FC07</div>
+        <a href="assets/file/SERTIFIKAT KELULUSAN PELATIHAN - 1808367301-56C94F7A.pdf" target="_blank" rel="noopener" class="cert-verify">
+          ↗ Verifikasi
+        </a>
+      </div>
+
+      <div class="cert-card">
+        <div class="cert-header">
+          <div class="cert-icon">🏅</div>
+          <div class="cert-meta">
+            <div class="cert-issuer">PT. Krakatau Bandar Samudera</div>
+            <div class="cert-date">Sept 2025</div>
+          </div>
+          <span class="cert-badge badge-iot">INT</span>
+        </div>
+        <div class="cert-title">Prakerin</div>
+        <a href="assets/file/Sertifikat Magang PT.KBS .pdf" target="_blank" rel="noopener" class="cert-verify">
+          ↗ Verifikasi
+        </a>
+      </div>
+
+      <!-- <div class="cert-card">
+        <div class="cert-header">
+          <div class="cert-icon">🏅</div>
+          <div class="cert-meta">
+            <div class="cert-issuer">Nama Lembaga / Platform</div>
+            <div class="cert-date">Bulan Tahun</div>
+          </div>
+          <span class="cert-badge badge-prog">PROG</span>
+        </div>
+        <div class="cert-title">Judul Sertifikat Ketiga Kamu</div>
+        <div class="cert-id">ID: XXXX-XXXX-XXXX</div>
+        <a href="#" target="_blank" rel="noopener" class="cert-verify">
+          ↗ Verifikasi
+        </a>
+      </div>
+
+      <!-- Tambah lebih banyak .cert-card di sini sesuai kebutuhan -->
+
+    </div>
+  </section>
+
+  <!-- ===================== CONTACT ===================== -->
+  <section id="contact">
+    <div class="section-header">
+      <span class="section-num">06</span>
+      <h2 class="section-title">Contact</h2>
+      <div class="section-line"></div>
+    </div>
+
+    <div class="contact-grid">
+      <a href="mailto:ridwanmaulanakholiq21@gmail.com" class="contact-card">
+        <div class="contact-icon">📧</div>
+        <div>
+          <div class="contact-label">EMAIL</div>
+          <div class="contact-value">ridwanmaulanakholiq21@gmail.com</div>
+        </div>
+      </a>
+
+      <a href="https://github.com/Wannn21-ai" target="_blank" rel="noopener" class="contact-card">
+        <div class="contact-icon">🐙</div>
+        <div>
+          <div class="contact-label">GITHUB</div>
+          <div class="contact-value">github.com/Wannn21-ai</div>
+        </div>
+      </a>
+
+      <a href="https://instagram.com/wannn.q" target="_blank" rel="noopener" class="contact-card">
+        <div class="contact-icon">📷</div>
+        <div>
+          <div class="contact-label">INSTAGRAM</div>
+          <div class="contact-value">@wannn.q</div>
+        </div>
+      </a>
+
+      <a href="https://www.linkedin.com/in/ridwan-maulana-kholiq-130007276/" target="_blank" rel="noopener" class="contact-card">
+        <div class="contact-icon">💼</div>
+        <div>
+          <div class="contact-label">LINKEDIN</div>
+          <div class="contact-value">ridwan-maulana-kholiq</div>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer>
+    <span class="footer-text">// built with ☕ by </span>
+    <span class="footer-name">Ridwan Maulana Kholiq</span>
+    <span class="footer-text"> · <span id="footer-year"></span></span>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
